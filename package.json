@@ -8,12 +8,35 @@
   },
   "devDependencies": {
     "@cap-js/sqlite": "^2",
-    "cds-plugin-ui5": "^0.13.0"
+    "cds-plugin-ui5": "^0.13.0",
+    "@cap-js/cds-test": "^0"
   },
   "scripts": {
     "start": "cds-serve",
     "watch": "cds watch",
-    "watch-incidents": "cds watch --open ns.incidents/index.html?sap-ui-xx-viewCache=false --livereload false"
+    "watch-incidents": "cds watch --open ns.incidents/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "test": "node --test"
+  },
+  "cds": {
+    "requires": {
+      "[development]": {
+        "auth": {
+          "kind": "mocked",
+          "users": {
+            "julio": {
+              "roles": [
+                "support"
+              ]
+            },
+            "andres": {
+              "roles": [
+                "support"
+              ]
+            }
+          }
+        }
+      }
+    }
   },
   "private": true,
   "workspaces": [

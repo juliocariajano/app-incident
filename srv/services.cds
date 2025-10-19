@@ -25,7 +25,7 @@ annotate ProcessorService.Incidents with @odata.draft.enabled;
 /**
  * To specify restriccions add.
  */
+
 annotate ProcessorService  with @(requires: 'support');
 annotate AdminService with @(requires: 'admin') 
-
 
