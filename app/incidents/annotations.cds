@@ -14,16 +14,6 @@ annotate service.Incidents with @(
                 $Type : 'UI.DataField',
                 Value : title,
             },
-            {
-                $Type : 'UI.DataField',
-                Label : 'Urgency',
-                Value : urgency_code,
-            },
-            {
-                $Type : 'UI.DataField',
-                Label : 'Status',
-                Value : status_code,
-            },
         ],
     },
     UI.Facets : [
